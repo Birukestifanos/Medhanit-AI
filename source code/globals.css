@@ -1,0 +1,21 @@
+@import "tailwindcss";
+
+
+body {
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+/* Smooth transitions for sidebar */
+aside {
+  transition: width 0.3s ease-in-out;
+}
+
+/* Custom hover effects */
+nav ul li a:hover {
+  @apply transform scale-105;
+}
+
+/* Focus ring for accessibility */
+button:focus, a:focus {
+  @apply ring-2 ring-blue-500 ring-offset-2 outline-none;
+}
